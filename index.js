@@ -48,3 +48,37 @@ fm.addEventListener("submit" , (e) => {
 start.addEventListener("click" , () => {
     pan.classList.toggle("on");
 });
+
+// this formats a unix number into a human-readable date
+const dob = new Date("07/27/2010").getTime(); // the date format for javascript is mm-dd-yyy
+pan.querySelector('#dob').textContent = Intl.DateTimeFormat('en-US', {dateStyle: 'full'}).format(dob);
+
+// FUNCTIONS
+// A function is a group of statements that does not run unless when told to or commanded to or called
+// to creae a function first type: function the name then (), ie function calculator () (then type what you want the function to do)
+// example below;
+function calculator () {
+    console.log(2 + 4);  // these four are called operators
+    console.log(10 - 5);
+    console.log(10 / 2);
+    console.log(3 * 3);
+    console.log(10 % 2); // this is called modulus (short form is mod); it is the reminder of a division
+}
+calculator(); // you do this to call the function 
+
+ function callConfetti () {
+   /*
+    const t = "a";
+    const u = 3;
+    console.log(t - u); // this is called concatenation (joining two or more strings together)
+    */
+   const d = new Date("07/27/2010").getDate();
+   const m = new Date("07/27/2010").getMonth();
+   const today = Date.now(); // note that 'date.now' will give you the unit number of the date
+   if (new Date(today).getDate() === d && new Date(today).getMonth() === m) {
+    pan.classList.add('bgi');
+   }
+   console.log(d);
+   //console.log(m);
+ }
+ callConfetti();

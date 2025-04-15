@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #033475;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: system-ui;
+    /* below for you not to be able to be selected */
+    user-select: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+#banner {
+    font-size: 300%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    letter-spacing: -5px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* note :: is pseudo selector */
+#banner > p::first-letter {
+    color: #e35; /*RGB*/
+}
+
+.tile {
+    font-weight: 700;
+    font-size: 400%;
+    border-radius: 7px;
+    padding: .5em;
+    font-family: monospace;
+    border: 1px solid #03347511;
+}
+
+#word {
+    /* border: 1px solid red; */
+    /* below the 1em is top and bottom 1em and the second is the left and right 0 */
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: 5em 0em 0; /*1st top 2nd left, right 3rd buttom */
+    /* below space in-between the tiles */
+    gap: 1em;
+    position: relative;
+}
+
+#hint {
+    /* border: 1px solid red; */
+    /* padding: 1em 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 5em 0em; */
+}
+
+#bulb {
+    height: 3em;
+    width: 3em;
+    /* border: 1px solid red; */
+    background-image: url(bulb-outline.svg);
+}
+
+#txt {
+    /* border: 1px solid red; */
+    font-size: 150%;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.chevron {
+    height: 5em;
+    width: 5em;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 7px;
+    transition: box-shadow .5s;
+}
+
+.chevron:hover {
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+#backward {
+    left: 4em;
+    background-image: url('./chevron-back-outline.svg');
+}
+
+#forward {
+    right: 4em;
+    background-image: url('./chevron-forward-outline.svg');
+}
+
+#restartBtn {
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid blue; */
+    transition: box-shadow .5s;
+    border-radius: 7px;
+    background-image: url(refresh-outline.svg);
+}
+
+#restartBtn:hover {
+    box-shadow: 0px 3px 5px #ccc;
+    /* background-image: url(refresh-outline.svg); */
+}
+
+#hintBtn {
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid blue; */
+    transition: box-shadow .5s;
+    border-radius: 7px;
+    background-image: url(help-circle-outline.svg);
+}
+
+#hintBtn:hover {
+    box-shadow: 0px 3px 5px #ccc;
+}
+
+#action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+#checkBtn {
+    border-radius: 2em;
+    /* border: 1px solid red; */
+    background-color: #8b008b;
+    background-image: url();
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    letter-spacing: 3px;
+}
+
+#checkBtn > span {
+    /* height: 4em;
+    width: 4em; */
+    color: #fff;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+#checkBtn > i {
+    height: 4em;
+    width: 4em;
+    /* border: 1px solid red; */
+    background-image: url(arrow-forward-outline.svg);
+}
+
+#cup {
+    height: 4em;
+    width: 4em;
+    background-image: url(trophy-outline.svg); 
+}
