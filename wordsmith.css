@@ -136,19 +136,24 @@ body {
 #action {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2em;
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 0 auto;
+    /* height: 40%; */
+    padding: 3em 1em;
 }
 
 #checkBtn {
     border-radius: 2em;
     /* border: 1px solid red; */
-    background-color: #8b008b;
+    background-color: #6211a3;
     background-image: url();
     display: flex;
     align-items: center;
     padding-left: 2em;
     letter-spacing: 3px;
+    margin-left: auto;
 }
 
 #checkBtn > span {
@@ -170,4 +175,105 @@ body {
     height: 4em;
     width: 4em;
     background-image: url(trophy-outline.svg); 
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+#cup > i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: #033475;
+    /* border: 1px solid red; */
+    color: #fff;
+    padding: 0.3em 0.5em;
+}
+
+/* to apply changes to selected elements */
+#bulb,#cup,#checkBtn > i,#hintBtn,#restartBtn,#forward,#backward {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+footer {
+    background: #f9f9f9;
+    position: sticky;
+    top: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#author {
+    color: #555;
+}
+
+/* to make it look the same in all devices you do */
+/* it is called "responsive design" */
+/* to show that you are about to start a redponsive design */          
+@media (width <= 480px) {
+
+    .tile {
+        font-size: 100%;
+    }
+
+    #forward,#backward {
+        background-size: 30%;
+        height: 2em;
+        width: 2em;
+    }
+
+    #word {
+        position: static;
+    }
+
+    #backward {
+        left: 0;
+    }
+
+    #forward {
+        right: 0;
+    }
+
+    #txt {
+        font-size: 100%;
+    }
+
+    #action {
+        border: 1px solid red;
+        width: 100%;
+        /* no matter the space it will stand side by side */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #checkBtn {
+        margin-left: 0;
+    }
+
+    #restartBtn,#hintBtn,#cup {
+        background-size: 40%;
+        height: 3em;
+        width: 3em;
+    }
+
+    #cup > i {
+        font-size: 70%;
+    }
+
+    #checkBtn > i {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    #checkBtn > span {
+        letter-spacing: 0;
+    }
+
+    #checkBtn {
+        padding-left: 1em;
+    }
 }

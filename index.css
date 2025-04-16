@@ -194,12 +194,12 @@ output {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow .5s;
+    /* transition: box-shadow .5s; */
 }
 
-#start:hover {
+/* #start:hover {
     box-shadow: 0px 8px 24px #555;
-}
+} */
 
 #start > div {
     height: 50%;
