@@ -142,13 +142,17 @@ body {
     margin: 7em auto;
     /* height: 40%; */
     padding: 3em 1em;
+    /* background-image: url(error_fawzi_mourad.gif); */
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 70% center;
 }
 
 #checkBtn {
-    border-radius: 2em;
+    border-radius: 3em;
     /* border: 1px solid red; */
     background-color: #6211a3;
-    background-image: url();
+    /* background-image: url(); */
     display: flex;
     align-items: center;
     padding-left: 2em;
@@ -188,7 +192,7 @@ body {
     background-color: #033475;
     /* border: 1px solid red; */
     color: #fff;
-    padding: 0.3em 0.5em;
+    padding: 0.1em 0.34em;
 }
 
 /* to apply changes to selected elements */
