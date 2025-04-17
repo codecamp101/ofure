@@ -139,7 +139,7 @@ body {
     gap: 2em;
     /* border: 1px solid red; */
     width: 50%;
-    margin: 0 auto;
+    margin: 7em auto;
     /* height: 40%; */
     padding: 3em 1em;
 }
@@ -162,6 +162,7 @@ body {
     color: #fff;
     font-size: 110%;
     font-weight: 500;
+    margin: 1.5em auto;
 }
 
 #checkBtn > i {
@@ -243,7 +244,7 @@ footer {
     }
 
     #action {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 100%;
         /* no matter the space it will stand side by side */
         flex-wrap: wrap;
