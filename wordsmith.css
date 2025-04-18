@@ -43,6 +43,7 @@ body {
     padding: .5em;
     font-family: monospace;
     border: 1px solid #03347511;
+    text-transform: uppercase;
 }
 
 #word {
@@ -134,6 +135,7 @@ body {
 }
 
 #action {
+    color: red;
     display: flex;
     align-items: center;
     gap: 2em;
@@ -146,7 +148,19 @@ body {
     background-size: 30%;
     background-repeat: no-repeat;
     background-position: 70% center;
+    position: relative;
 }
+
+/* .dance {
+    width: 10em;
+    height: 5em;
+    border: 1px solid red;
+    position: absolute;
+    top: 80%;
+    left: 66%;
+    border-radius: 1000000px;
+} */
+
 
 #checkBtn {
     border-radius: 3em;
@@ -215,6 +229,75 @@ footer {
 #author {
     color: #555;
 }
+
+#trophy, #wrap, #x_close {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+::backdrop {
+    background-color: #3339;
+}
+[popover] {
+    outline: none;
+    border: 0;
+}
+#gameover {
+    width: 360px;
+    height: 488px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+}
+#wrap {
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    background-image: url('./sun_ray_pattern_stock_photos.jpg');
+    background-size: cover;
+}
+#trophy {
+    background-image: url('./trophy-outline.svg');
+    height: 10em;
+    width: 10em;
+    /* border: 1px solid; */
+    background-size: 70%;
+}
+@keyframes spinY {
+    from {
+        rotate: y 0deg;
+    }
+    to {
+        rotate: y 180deg;
+    }
+}
+#gameover:popover-open #trophy {
+    animation: spinY .5s linear 1 backwards;
+}
+#total_score, pre {
+    font-family: monospace;
+    font-size: 400%;
+    font-weight: 700;
+}
+sup {
+    font-family: monospace;
+    font-size: 70%;
+}
+#x_close {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    position: fixed;
+    right: 3em;
+    top: 3em;
+    background-image: url('./close-outline.svg');
+    border: 1px solid #f3f3f3;
+}
+
 
 /* to make it look the same in all devices you do */
 /* it is called "responsive design" */

@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="wordsmith.css">
 </head>
 <body>
+    
+    <svg style="display: none;">
+        <symbol id="icon" viewBox="0 0 24 24">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+        </symbol>
+    </svg>
     <div id="banner">
         <p>Word</p>
         <p>Smith</p>
+        <p id="container"></p>
     </div>
     <div id="word">
-        <button type="button" class="chevron" id="backward"></button>
+        <button type="button" class="chevron" id="backward" style="visibility: hidden;pointer-events:none;"></button>
         <button type="button" class="chevron" id="forward"></button>
         <span class="tile">T</span>
         <span class="tile">O</span>
@@ -23,7 +30,7 @@
     </div>
     <div id="hint">
         <div id="bulb"></div>
-        <div id="txt">To walk unsteadily, like a baby.</div>
+        <div id="txt"></div>
     </div>
     <div id="action">
         <button type="button" id="restartBtn"></button>
@@ -35,10 +42,25 @@
             <span>CHECK</span>
             <i></i>
         </button>
+        <p id="container" class="dance"></p>
     </div>
     <footer>
         <div id="author">&commat;osas_ofure | 2025</div>
     </footer>
+    <div id="gameover" popover="manual">
+        <div id="wrap">
+            <div id="trophy"></div>
+            <div id="total_score"></div>
+            <div id="ascii">
+<!-- <pre>
+ | |
+.---.
+</pre> -->
+            </div>
+            <button type="button" id="x_close" popovertarget="gameover" popovertargetaction="hide"></button>
+        </div>
+    </div>
     <script src="wordsmith.js"></script>
 </body>
 </html>
+<!-- note <sup></sup> means superscript -->
