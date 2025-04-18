@@ -77,7 +77,7 @@ const wordsmith = [
     },
     {
         word: "ORIZA-SATIVA",
-        hint: "Botanical name rice",
+        hint: "Botanical name for rice",
         offset: [0,3,4,6,8,10]
     },
     {
@@ -87,17 +87,17 @@ const wordsmith = [
     },
     {
         word: "CALCIUM",
-        hint: "20th element in the preodic table",
+        hint: "20th element in the Periodic Table",
         offset: [0,3,5,6]
     },
     {
         word: "PETER",
-        hint: "First diciple of Jesus",
+        hint: "First disciple of Jesus",
         offset: [0,2,4]
     },
     {
         word: "BLUEPRINT",
-        hint: "Artitects use it to make a sketches",
+        hint: "Architects use it to make sketches",
         offset: [0,2,4,5,7,8]
     }
 
